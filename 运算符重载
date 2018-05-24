@@ -24,3 +24,4 @@ const String&String:: operator+=(const String&a)
     delete temp
     return* this
 }
+//简单的修改
