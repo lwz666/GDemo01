@@ -27,3 +27,4 @@ const String&String:: operator+=(const String&a)
 //简单的修改
 //practice的修改
 //新的修改啊
+//对teacher进行修改
