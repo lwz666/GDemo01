@@ -4,7 +4,7 @@ String opreator+(const String&a,const String&b)
    char* temp = new char[len+1]
    for(int i = 0;i<a.len;i++)
    {
-     temp[i] = a.rep[i];
+     temp[i] = a.rep[i]
    }
    for(int i = 0;i<b.len;i++)
    {
