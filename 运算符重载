@@ -1,0 +1,26 @@
+String opreator+(const String&a,const String&b)
+{
+   int len = a.len+b.len
+   char* temp = new char[len+1]
+   for(int i = 0;i<a.len;i++)
+   {
+     temp[i] = a.rep[i];
+   }
+   for(int i = 0;i<b.len;i++)
+   {
+     temp[i+a.len]=b.rep[i]
+   }
+   String str(temp)
+   delete temp
+   return str
+}
+const String&String:: operator+=(const String&a)
+{
+    this->len+=a.len
+    char* temp =this->rep
+    this->rep = new char[len+1]
+    strcpy(this->rep,temp)
+    strcat(this->rep,a.rep)
+    delete temp
+    return* this
+}
